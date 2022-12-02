@@ -1,0 +1,11 @@
+.media{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    padding: 10px;
+}
+.mediaName{
+    margin: 0 10px;
+    color: rgb(241, 67, 14);
+    text-decoration: none;
+}

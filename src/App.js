@@ -1,6 +1,7 @@
 import './App.css';
-import Area from './Area';
-import Newsfeed from './Newsfeed';
+import Area from './Area'; 
+import Newsfeed from './components/Newsfeed';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
