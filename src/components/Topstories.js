@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/Topstories.css'
 import storyimg from '../images/storyimg.jpg'
-import { Row, Col, Button } from 'antd';
+import { Row, Col, Button, Divider } from 'antd';
 import worldcup1 from '../images/worldcup1.jpg'
 import worldcup2 from '../images/worldcup2.png'
 import worldcup4 from '../images/worldcup4.jpg'
@@ -201,7 +201,7 @@ const sports = [
         <h1>Top Stories</h1>
         <div className="story1">
             <div className="storyimg"><img src={storyimg} alt="" /></div>
-            <div className="storydesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimo ipsam quas ipsum corrupti! Voluptatibus ratione voluptatem odit natus? <br></br>
+            <div className="storydesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimo ipsam quas ipsum corrupti! Voluptatibus <br></br>
             <small className='topstoriesDate'>1st December, 2022</small>
             </div>
         </div>
@@ -212,7 +212,7 @@ const sports = [
         <div className="worldcupstory">
         <Row>
         {stories.map((story) => (
-          <Col span={8}>
+          <Col xs={24} xl={8}>
             <div className="story2">
             <div className="substoryimg"><img src={story.image
             } alt="" /></div>
@@ -227,6 +227,8 @@ const sports = [
         <Button type='primary' ghost>Read More...</Button>
         </div>
 
+        <Divider/>
+
 
 
 {/*worldcup stories*/}
@@ -236,7 +238,7 @@ const sports = [
           <div className="worldcupstory">
           <Row>
         {worldcup.map((worldcup) => (
-          <Col span={8}>
+          <Col xs={24} xl={8}>
             <div className="story2">
             <div className="substoryimg"><img src={worldcup.image
             } alt="" /></div>
@@ -251,6 +253,7 @@ const sports = [
             </div>
             
         </div>
+        <Divider/>
 
 
 {/*CORONAVIRUS stories*/}
@@ -260,7 +263,7 @@ const sports = [
           <div className="worldcupstory">
           <Row>
         {corona.map((corona) => (
-          <Col span={8}>
+          <Col xs={24} xl={8}>
             <div className="story2">
             <div className="substoryimg"><img src={corona.image
             } alt="" /></div>
@@ -275,6 +278,7 @@ const sports = [
             </div>
             
         </div>
+        <Divider/>
 
 
 {/*SPORTS STORIES*/}
@@ -284,7 +288,7 @@ const sports = [
           <div className="worldcupstory">
           <Row>
         {sports.map((sports) => (
-          <Col span={8}>
+          <Col xs={24} xl={8}>
             <div className="story2">
             <div className="substoryimg"><img src={sports.image
             } alt="" /></div>
@@ -300,9 +304,10 @@ const sports = [
             </div>
             
         </div>
-      
+        <marquee behavior="" direction="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ducimus tempora, magnam dignissimos et doloribus ad consequuntur voluptate deserunt nesciunt excepturi corporis. Odit vel sunt, rerum hic, porro laudantium laborum aliquid totam, temporibus adipisci dignissimos labore eaque? Cum est optio atque, error ex velit repellendus nulla quisquam labore nam incidunt.</marquee>
       
     </div>
+
   )
 }
 

@@ -1,11 +1,11 @@
 .media{
     display: flex;
     justify-content: center;
-    font-size: 22px;
-    padding: 10px;
+    font-size: 18px;
+    padding: 0px;
 }
 .mediaName{
-    margin: 0 10px;
+    margin: 0px 0px;
     color: rgb(241, 67, 14);
     text-decoration: none;
 }
