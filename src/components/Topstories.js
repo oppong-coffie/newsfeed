@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/Topstories.css'
 import storyimg from '../images/storyimg.jpg'
-import { Row, Col, Button, Divider } from 'antd';
+import { Row, Col, Button, Divider, Carousel  } from 'antd';
 import worldcup1 from '../images/worldcup1.jpg'
 import worldcup2 from '../images/worldcup2.png'
 import worldcup4 from '../images/worldcup4.jpg'
@@ -28,6 +28,9 @@ import sp3 from '../images/sp3.png'
 import sp4 from '../images/sp4.jpg'
 import sp5 from '../images/sp5.jpg'
 import sp6 from '../images/sp6.webp'
+import carousel1 from '../images/caro1.jpg'
+import caro2 from '../images/caro2.jpg'
+import caro3 from '../images/caro3.webp'
 
 const Topstories = () => {
 
@@ -195,10 +198,34 @@ const sports = [
     image: sp4,
   },
 ]
+const contentStyle = {
+  height: '220px',
+  color: '#fff',
+  lineHeight: '300px',
+  textAlign: 'center',
+  background: '#364d74',
+};
 
   return (
     <div>
-        <h1>Top Stories</h1>
+
+      <div>
+      <Carousel autoplay fade>
+    <div>
+      <h3 style={contentStyle}><img src={carousel1}  alt="" /> </h3>
+    </div>
+    <div>
+      <h3 style={contentStyle}><img src={sp3}  alt="" /></h3>
+    </div>
+    <div>
+      <h3 style={contentStyle}><img src={sp5}  alt="" /></h3>
+    </div>
+    <div>
+      <h3 style={contentStyle}><img src={caro3}  alt="" /></h3>
+    </div>
+  </Carousel>
+      </div>
+        <h1 className='font-bold text-red-500 text-2xl'>Top Stories</h1>
         <div className="story1">
             <div className="storyimg"><img src={storyimg} alt="" /></div>
             <div className="storydesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimo ipsam quas ipsum corrupti! Voluptatibus <br></br>
@@ -224,7 +251,7 @@ const sports = [
         
         ))}
         </Row>
-        <Button type='primary' ghost>Read More...</Button>
+        <Button className='bg-gradient-to-b from-green-100 to-yellow-300 font-bold' type='primary' ghost>Read More...</Button>
         </div>
 
         <Divider/>
@@ -234,7 +261,7 @@ const sports = [
 {/*worldcup stories*/}
 
         <div className="worldcup">
-          <h1>WORLD CUP</h1>
+          <h1 className='text-red-500 font-bold text-2xl'>WORLD CUP</h1>
           <div className="worldcupstory">
           <Row>
         {worldcup.map((worldcup) => (
@@ -249,7 +276,7 @@ const sports = [
           </Col>
         ))}
         </Row>
-        <Button type='primary' ghost>Read More...</Button>
+        <Button className='bg-gradient-to-b from-green-100 to-yellow-300 font-bold' type='primary' ghost>Read More...</Button>
             </div>
             
         </div>
@@ -259,7 +286,7 @@ const sports = [
 {/*CORONAVIRUS stories*/}
 
         <div className="worldcup">
-          <h1> CORONAVIRUS </h1>
+          <h1 className='text-red-500 font-bold text-2xl'> CORONAVIRUS </h1>
           <div className="worldcupstory">
           <Row>
         {corona.map((corona) => (
@@ -274,7 +301,7 @@ const sports = [
           </Col>
         ))}
         </Row>
-        <Button type='primary' ghost>Read More...</Button>
+        <Button className='bg-gradient-to-b from-green-100 to-yellow-300 font-bold' type='primary' ghost>Read More...</Button>
             </div>
             
         </div>
@@ -284,7 +311,7 @@ const sports = [
 {/*SPORTS STORIES*/}
 
         <div className="worldcup">
-          <h1> SPORTS NEWS </h1>
+          <h1 className='text-red-500 font-bold text-2xl'> SPORTS NEWS </h1>
           <div className="worldcupstory">
           <Row>
         {sports.map((sports) => (
@@ -300,7 +327,7 @@ const sports = [
           </Col>
         ))}
         </Row>
-        <Button type='primary' ghost>Read More...</Button>
+        <Button className='bg-gradient-to-b from-green-100 to-yellow-300 font-bold' type='primary' ghost>Read More...</Button>
             </div>
             
         </div>

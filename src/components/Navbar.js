@@ -1,5 +1,5 @@
 import React from 'react'
-import { Menu } from 'antd';
+import { Menu, Button } from 'antd';
 import '../css/Menu.css'
 import eco from '../images/eco.png'
 
@@ -12,6 +12,7 @@ const Navbar = () => {
           <span style={{backgroundColor:'red', color:'white', padding:'8px'}}>NEWS</span>
         </div>
         <div className="logo2"><img src={eco} alt="" /></div>
+        <Button className='font-extrabold' danger loading>LIVE</Button>
       </div>
       <Menu mode="horizontal">
         <Menu.Item>
